@@ -1,0 +1,19 @@
+/* Preloader.css */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out; /* Smooth transition */
+  }
+  
+  .preloader-active {
+    transform: translateY(0); /* Initial position */
+    opacity: 1;
+  }
+  
+  .preloader-exit {
+    transform: translateX(100%); 
+    opacity: 0;
+  }
